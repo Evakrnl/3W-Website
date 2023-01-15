@@ -1,0 +1,468 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.grid {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: min-content min-content auto min-content;
+  grid-template-areas:
+    'header header'
+    'nav nav'
+    'aside main'
+    'footer footer';
+
+}
+
+.header,
+.nav,
+.main,
+.footer {
+  border: 1px solid black;
+  background-color: lightgrey;
+
+}
+
+
+.header {
+  grid-area: header;
+}
+
+
+
+.aside {
+  grid-area: aside;
+  width: 100%;
+  border: 1px solid black;
+  background-color: #111;
+
+}
+
+
+
+.main {
+  grid-area: main;
+  width: 100%;
+}
+
+
+.img2 {
+  padding-right: 10px;
+  float: left;
+}
+
+p.p0 {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px;
+  text-align: justify;
+  float: right;
+
+}
+
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5 {
+  display: none;
+  padding-top: 10px;
+}
+
+p.p1,
+p.p2,
+p.p4,
+p.p5 {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 17px;
+  text-align: justify;
+  display: none;
+}
+
+.p3,
+p.p3i,
+p.p3ii,
+p.p3iii,
+p.p3iv {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 17px;
+  text-align: justify;
+
+}
+
+.p3 {
+  display: none;
+}
+
+.photos1 {
+  display: none;
+}
+
+.photos2 {
+  display: none;
+
+}
+
+.img1 {
+  width: 100%;
+  height: 50%;
+}
+
+.pics {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.book1,
+.book2,
+.book3,
+.book4,
+.book5,
+.book6,
+.book7,
+.book8,
+.book9,
+.book10,
+.book11 {
+  width: 182px;
+  height: 269px;
+  padding-right: 50px;
+  padding-left: 90px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  float: right;
+}
+
+.title {
+
+  text-align: center;
+
+}
+
+
+
+.footer {
+  grid-area: footer;
+}
+
+.nav {
+  grid-area: nav;
+  background-color: #313131;
+
+}
+
+.nav .link1 {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  background-color: #837d6c;
+}
+
+.nav .link2 {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  background-color: #837d6c;
+}
+
+.nav .link3 {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  background-color: #837d6c;
+}
+
+.nav .link4 {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  background-color: #837d6c;
+}
+
+.nav .link5 {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  background-color: #837d6c;
+}
+
+.link1:hover {
+  background: rgb(85, 79, 79);
+}
+
+.link2:hover {
+  background: rgb(85, 79, 79);
+}
+
+.link3:hover {
+  background: rgb(85, 79, 79);
+}
+
+.link4:hover {
+  background: rgb(85, 79, 79);
+}
+
+.link5:hover {
+  background: rgb(85, 79, 79);
+}
+
+.menu1 {
+  display: none
+}
+
+.menu2 {
+  display: none
+}
+
+.menu3 {
+  display: none
+}
+
+.menu4 {
+  display: none
+}
+
+.menu5 {
+  display: none
+}
+
+
+.menu1 {
+  height: calc(100vh - 60px);
+  z-index: 1;
+  background-color: #111;
+  overflow-x: hidden;
+
+}
+
+.menu1 a {
+  padding: 6px 6px 6px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.menu1 a:hover {
+  color: #f1f1f1;
+}
+
+.menu2 {
+  height: calc(100vh - 60px);
+  z-index: 1;
+  background-color: #111;
+  overflow-x: hidden;
+
+}
+
+.menu2 a {
+  padding: 6px 6px 6px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.menu2 a:hover {
+  color: #f1f1f1;
+}
+
+.menu3 {
+  height: calc(100vh - 60px);
+  z-index: 1;
+  background-color: #111;
+  overflow-x: hidden;
+
+}
+
+.menu3 a {
+  padding: 6px 6px 6px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.menu3 a:hover {
+  color: #f1f1f1;
+}
+
+
+.menu4 {
+  height: calc(100vh - 60px);
+  z-index: 1;
+  background-color: #111;
+  overflow-x: hidden;
+
+}
+
+.menu4 a {
+  padding: 6px 6px 6px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.menu4 a:hover {
+  color: #f1f1f1;
+}
+
+
+.menu5 {
+  height: calc(100vh - 60px);
+  z-index: 1;
+  background-color: #111;
+  overflow-x: hidden;
+
+}
+
+.menu5 a {
+  padding: 6px 6px 6px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.menu5 a:hover {
+  color: #f1f1f1;
+}
+
+#table1 tr:nth-child(even) {
+  background-color: #494139;
+}
+
+#table1 {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #57583f;
+  height: 100%;
+
+}
+
+#table1 td,
+#table1 th {
+  padding: 8px;
+
+}
+
+#table1 tr:nth-child(even) {
+  background-color: #858567;
+}
+
+#table1 tr:hover {
+  background-color: rgb(54, 54, 62);
+}
+
+#table1 th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #111;
+  color: white;
+}
+
+
+
+
+
+
+form {
+  border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+input[type=text],
+input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #7e9089;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+
+.LogIn{
+  display: none;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #6e514e;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+
+  .cancelbtn {
+    width: 100%;
+  }
+}

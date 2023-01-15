@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+
+<head>
+    <title>ergasia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/index.css">
+
+
+</head>
+
+<body>
+
+    <!-- <script type="module" src="static/index.js"></script> -->
+   
+    <script src="hideShow.js"></script>
+    <script  src="fetchTableBooks.js"></script>
+    <script  src="fetchTableInterviews.js"></script>
+    <script src="fetchBiographyWorksLinks.js"></script>
+    <script src="fetchPhotosLinks.js"></script>
+
+    <div class="grid">
+        <div class="header"></div>
+        <div class="nav">
+            <a href="#Biography" class="link1"  onclick="HideAndShow1()">Biography</a>
+            <a href="#Photos" class="link2" onclick="HideAndShow2()">Photos</a>
+            <a href="#Works" class="link3"  onclick="HideAndShow3()">Works</a>
+            <a href="#Links" class="link4"  onclick="HideAndShow4()">Links</a>
+            <a href="#User" class="link5"  onclick="HideAndShow5()">User</a>
+        </div>
+
+        <div class="aside">
+            <div class="menu1">
+                <a href="#EarlyLife" onclick="ShowEarlyLife()">Early life</a>
+                <a href="#ShowEducationAndEarlyCareer" onclick="ShowEducationAndEarlyCareer()">Education and early career</a>
+                <a href="#ShowAcademicCareer" onclick="ShowAcademicCareer()">Academic career</a>
+                <a href="#ShowPersonalLife" onclick="ShowPersonalLife()">Personal life</a>
+                <a href="#ShowAwardsAndRecognition" onclick="ShowAwardsAndRecognition()">Awards and recognition</a>
+            </div>
+
+            <div class="menu2">
+                <a href="#WriterPhotos" onclick="ShowWriterPhotos()">Writer's Photos</a>
+                <a href="#BookPhotos" onclick="ShowBookPhotos()">Book Photos</a>
+
+            </div>
+
+            <div class="menu3">
+                <a href="#Books" onclick="RequestData('/worksBooks.json'),ShowTableBooks()">Books</a>
+                <a href="#Interviews" onclick="RequestData2('/worksInterviews.json'),ShowTableInterviews()">Interviews</a>
+
+            </div>
+
+            <div class="menu4">
+                <a href="#BiographyWorksLinks" onclick="RequestData3('/LinksBiographyWorks.json'),ShowTableBiographyWorksLinks()">Biography/Works Links</a>
+                <a href="#PhotosLinks" onclick="RequestData4('/LinksPhotos.json'),ShowTablePhotosLinks()">Photos Links</a>
+                
+            </div>
+
+            <div class="menu5">
+                <a href="#LogIn" onclick="ShowLogIn()">Log In</a>
+                <a href="#Log Out">Log Out</a>
+                <a href="#EditWorks">Edit Works</a>
+                <a href="#EditLinks">Edit Links</a>
+            </div>
+
+
+
+
+        </div>
+
+        <div class="main">
+
+            <div class="home">
+
+                <h1 class="h0"> An Introduction to Daniel Kahneman </h1>
+
+                <p class="p0">
+
+                    <img src="images/img2.jpg" class="img2">
+
+                    Daniel Kahneman is an Israeli-American psychologist and economist notable for his work on the
+                    psychology of judgment and decision-making, as well as behavioral economics, for which he was
+                    awarded
+                    the 2002 Nobel Memorial Prize in Economic Sciences (shared with Vernon L. Smith). His empirical
+                    findings
+                    challenge the assumption of human rationality prevailing in modern economic theory.
+
+                    With Amos Tversky and others, Kahneman established a cognitive basis for common human errors that
+                    arise
+                    from heuristics and biases, and developed prospect theory.
+
+                    In 2011 he was named by Foreign Policy magazine in its list of top global thinkers.In the same year
+                    his
+                    book Thinking, Fast and Slow, which summarizes much of his research, was published and became a best
+                    seller. In 2015, The Economist listed him as the seventh most influential economist in the world.
+
+                    He is professor emeritus of psychology and public affairs at Princeton University's Princeton School
+                    of
+                    Public and International Affairs. Kahneman is a founding partner of TGG Group, a business and
+                    philanthropy consulting company. He was married to cognitive psychologist and Royal Society Fellow
+                    Anne
+                    Treisman.
+
+                </p>
+
+            </div>
+
+            <div class="menu1Biography">
+
+                <h2 class="h1">Early life</h2>
+
+                <p class="p1">
+
+                    Daniel Kahneman was born in Tel Aviv, Mandatory Palestine, in 1934, where his mother, Rachel, was
+                    visiting relatives. He spent his childhood years in Paris, France, where his parents had emigrated
+                    from
+                    Lithuania in the early 1920s. Kahneman and his family were in Paris when it was occupied by Nazi
+                    Germany
+                    in 1940. His father, Efrayim, was picked up in the first major round-up of French Jews, but he was
+                    released after six weeks due to the intervention of his employer, La Cagoule backer Eugène
+                    Schueller.The family was on the run for the remainder of the war, and survived, except for the
+                    death of Kahneman's father due to diabetes in 1944. Kahneman and his family then moved to British
+                    Mandatory Palestine in 1948, just before the creation of the state of Israel.
+                    <br>
+                    <br>
+
+                    Kahneman has written of his experience in Nazi-occupied France, explaining in part why he entered
+                    the
+                    field of psychology:
+                    <br>
+
+                    <br>
+
+                    It must have been late 1941 or early 1942. Jews were required to wear the Star of David and to obey
+                    a 6
+                    p.m. curfew. I had gone to play with a Christian friend and had stayed too late. I turned my brown
+                    sweater inside out to walk the few blocks home. As I was walking down an empty street, I saw a
+                    German
+                    soldier approaching. He was wearing the black uniform ,that I had been told to fear more than
+                    others,
+                    the one worn by specially recruited SS soldiers. As I came closer to him, trying to walk fast, I
+                    noticed
+                    that he was looking at me intently. Then he beckoned me over, picked me up, and hugged me. I was
+                    terrified that he would notice the star inside my sweater. He was speaking to me with great emotion,
+                    in
+                    German. When he put me down, he opened his wallet, showed me a picture of a boy, and gave me some
+                    money.
+                    I went home more certain than ever that my mother was right: people were endlessly complicated and
+                    interesting.
+
+                    <br>
+
+                    <br>
+                    Israeli intellectual Yeshayahu Leibowitz, whom Kahneman describes as influential in his intellectual
+                    development, was Kahneman's chemistry teacher at Beit-Hakerem High School, and Kahneman's physiology
+                    professor at university.
+
+
+                    Kahneman's paternal uncle was Rabbi Yosef Shlomo Kahaneman, the head of the Ponevezh Yeshiva.
+                </p>
+
+                <h2 class="h2">Education and early career</h2>
+
+                <p class="p2">
+
+                    In 1954 Kahneman received his Bachelor of Science degree, with a major in psychology and a minor in
+                    mathematics, from the Hebrew University of Jerusalem.
+                    <br>
+
+                    He served in the psychology department of the Israeli Defense Forces, and as an infantryman. One of
+                    his responsibilities was to evaluate candidates for officer's training school, and to develop tests
+                    and measures for this purpose. Kahneman describes his military service as a "very important period"
+                    in his life.
+                    <br>
+
+                    In 1958 he went to the United States to study for his PhD in Psychology at the University of
+                    California, Berkeley. His 1961 dissertation, advised by Susan Ervin, examined relations between
+                    adjectives in the semantic differential and allowed him to "engage in two of [his] favorite
+                    pursuits: the analysis of complex correlational structures and FORTRAN programming.
+
+                </p>
+                <h2 class="h3">Academic career</h2>
+
+                <div class="p3">
+
+                    <h3 class="h3i">Cognitive psychology</h3>
+
+                    <p class="p3i">
+
+                        Kahneman began his academic career as a lecturer in psychology at the Hebrew University of
+                        Jerusalem in 1961.He was promoted to senior lecturer in 1966. His early work focused on
+                        visual perception and attention. For example, his first publication in the prestigious journal
+                        Science was entitled "Pupil Diameter and Load on Memory" (Kahneman & Beatty, 1966). During this
+                        period, Kahneman was a visiting scientist at the University of Michigan (1965–66) and the
+                        Applied Psychology Research Unit in Cambridge (1968/1969, summers). He was a fellow at the
+                        Center for Cognitive Studies, and a lecturer in cognitive psychology at Harvard University in
+                        1966/1967.
+
+                    </p>
+                    <h3 class="h3ii">Judgment and decision-making</h3>
+
+                    <p class="p3ii">
+
+                        This period marks the beginning of Kahneman's lengthy collaboration with Amos Tversky. Together,
+                        Kahneman and Tversky published a series of seminal articles in the general field of judgment and
+                        decision-making, culminating in the publication of their prospect theory in 1979 (Kahneman &
+                        Tversky, 1979). Following this, the pair teamed with Paul Slovic to edit a compilation entitled
+                        "Judgement Under Uncertainty: Heuristics and Biases" (1982) that proved to be an important
+                        summary of their work and of other recent advances that had influenced their thinking. Kahneman
+                        was ultimately awarded the Nobel Memorial Prize in Economics in 2002 for his work on prospect
+                        theory.
+                        <br>
+
+                        In his Nobel biography Kahneman states that his collaboration with Tversky began after Kahneman
+                        had invited Tversky to give a guest lecture to one of Kahneman's seminars at Hebrew University
+                        in 1968 or 1969.[5] Their first jointly written paper, "Belief in the Law of Small Numbers," was
+                        published in 1971 (Tversky & Kahneman, 1971). They published seven articles in peer-reviewed
+                        journals in the years 1971–1979. Aside from "Prospect Theory," the most important of these
+                        articles was "Judgment Under Uncertainty: Heuristics and Biases" (Tversky & Kahneman, 1974),
+                        which was published in the prestigious journal Science and introduced the notion of anchoring.
+                        Kahneman wrote the paper at the Van Leer Jerusalem Institute.
+                        <br>
+
+                        Kahneman left Hebrew University in 1978 to take a position at the University of British
+                        Columbia.
+                        <br>
+
+                        In 2021, Kahneman and co-authors Olivier Sibony and Cass Sunstein contributed to the field with
+                        work on unwanted variability in human judgments of the same problem, what they term 'noise'. In
+                        Noise: A Flaw in Human Judgment, they write that due to factors such as cognitive biases, group
+                        dynamics, mood, stress, fatigue, and differences in skill between assessors/decision
+                        makers/judges, judgements that should ideally be identical in fact often differ a lot. This
+                        gives rise to injustices, hazards and costs of various types. Furthermore, it does so in a way
+                        that is distinct from statistical bias and which is affected by cognitive biases but not limited
+                        to their influence. In the book, which received much press, they explain what noise is, how it
+                        can be detected and how it can be reduced – which can also reduce bias.
+
+                    </p>
+                    <h3 class="h3iii">Behavioral economics</h3>
+
+                    <p class="p3iii">
+
+                        Kahneman and Tversky were both fellows at the Center for Advanced Study in the Behavioral
+                        Sciences at Stanford University in the academic year 1977–1978. A young economist named Richard
+                        Thaler was a visiting professor at the Stanford branch of the National Bureau of Economic
+                        Research during that same year. According to Kahneman, "[Thaler and I] soon became friends, and
+                        have ever since had a considerable influence on each other's thinking." Building on prospect
+                        theory and Kahneman and Tversky's body of work, Thaler published "Toward a Positive Theory of
+                        Consumer Choice" in 1980, a paper which Kahneman has called "the founding text of behavioral
+                        economics.
+                        <br>
+
+                        Kahneman and Tversky became heavily involved in the development of this new approach to economic
+                        theory, and their involvement in this movement had the effect of reducing the intensity and
+                        exclusivity of their earlier period of joint collaboration.[citation needed] According to
+                        Kahneman the collaboration 'tapered off' in the early 1980s, although they tried to revive
+                        it.Factors included Tversky receiving most of the external credit for the output of the
+                        partnership, and a reduction in the generosity with which Tversky and Kahneman interacted with
+                        each other. They would continue to publish together until the end of Tversky's life, but the
+                        period when Kahneman published almost exclusively with Tversky ended in 1983, when he published
+                        two papers with Anne Treisman, his wife since 1978.
+
+
+                    </p>
+
+                    <h3 class="h3iv">Hedonic psychology</h3>
+
+                    <p class="p3iv">
+
+                        In the 1990s, Kahneman's research focus began to gradually shift in emphasis towards hedonic
+                        psychology. According to Kahneman and colleagues,Hedonic psychology is the study of what makes
+                        experiences and life pleasant or unpleasant. It is concerned with feelings of pleasure and pain,
+                        of interest and boredom, of joy and sorrow, and of satisfaction and dissatisfaction. It is also
+                        concerned with the whole range of circumstances, from the biological to the societal, that
+                        occasion suffering and enjoyment.
+                        <br>
+                        In 1992 Varey and Kahneman introduced the method of evaluating moments and episodes as a way to
+                        capture "experiences extended across time". While Kahneman continued to study decision-making
+                        (e.g., Kahneman, 1992, 1994; Kahneman & Lovallo, 1993), hedonic psychology was the focus of an
+                        increasing number of publications (e.g., Fredrickson & Kahneman, 1993; Kahneman, Fredrickson,
+                        Schreiber & Redelemeier, 1993; Kahneman, Wakker & Sarin, 1997; Redelmeier & Kahneman, 1996),
+                        culminating in a volume co-edited with Ed Diener and Norbert Schwarz, scholars of affect and
+                        well-being.
+                        <br>
+
+                    </p>
+                </div>
+
+                <h2 class="h4">Personal life</h2>
+
+                <p class="p4">
+
+                    Kahneman's first wife was Irah Kahneman, an Israeli educational psychologist, with whom he had
+                    two children. His son has schizophrenia, and his daughter works in technology.
+                    <br>
+
+                    His second wife was the cognitive psychologist Anne Treisman, from 1978 until her death in 2018. As
+                    of 2014, they lived part-time in Berkeley, California. As of 2022, he lives in New York City
+                    with Barbara Tversky, the widow of his long-time collaborator Amos Tversky.
+                    <br>
+
+                    In 2015 Kahneman described himself as a very hard worker, as "a worrier" and "not a jolly person."
+                    But, despite this, he said, "I'm quite capable of great enjoyment, and I've had a great life."
+                </p>
+
+                <h2 class="h5">Awards and recognition </h2>
+                <p class="p5">
+                    In 2001, he was elected a member of the National Academy of Sciences.
+                    <br>
+                    In 2002, Kahneman received the Nobel Memorial Prize in Economic Sciences, despite being a research
+                    psychologist, for his work in prospect theory. Kahneman states he has never taken a single economics
+                    course – that everything that he knows of the subject he and Tversky learned from their
+                    collaborators Richard Thaler and Jack Knetsch.
+                    <br>
+                    Kahneman, co-recipient with Tversky, earned the 2003 University of Louisville Grawemeyer Award for
+                    Psychology.
+                    <br>
+                    In 2005, he was elected a member of the American Philosophical Society.
+                    <br>
+                    In 2007, he was presented with the American Psychological Association's Award for Outstanding
+                    Lifetime Contributions to Psychology.
+                    <br>
+                    On November 6, 2009, he was awarded an honorary doctorate from the department of Economics at
+                    Erasmus University in Rotterdam, Netherlands. In his acceptance speech Kahneman said, "when you live
+                    long enough, you see the impossible become reality." He was referring to the fact that he would
+                    never have expected to be honored as an economist when he started his studies into what would become
+                    Behavioral Economics.
+                    <br>
+                    In both 2011 and 2012, he made the Bloomberg 50 most influential people in global finance.
+                    On November 9, 2011, he was awarded the Talcott Parsons Prize by the American Academy of Arts and
+                    Sciences.
+                    <br>
+                    His book Thinking, Fast and Slow was the winner of the 2011 Los Angeles Times Book Award for Current
+                    Interest and the National Academy of Sciences Communication Award for the best book published in
+                    2011.
+                    <br>
+                    In 2012 he was accepted as corresponding academician at the Real Academia Española (Economic and
+                    Financial Sciences).
+                    <br>
+                    On August 8, 2013, President Barack Obama announced that Daniel Kahneman would be a recipient of the
+                    Presidential Medal of Freedom.
+                    <br>
+                    On June 1, 2015, he was awarded an honorary doctorate from the Faculty of Arts at McGill University
+                    in Montreal.
+                    <br>
+                    December 2018, Kahneman was named a Gold Medal Honoree by The National Institute of Social
+                    Sciences.
+                    <br>
+                    In 2019, Kahneman received the Golden Plate Award of the American Academy of Achievement.
+
+                </p>
+
+            </div>
+
+            <div class="menu2Photos">
+
+                <div class="photos1">
+
+                    <h2>Writer's Photos</h2>
+
+                    <img src="images/img1.jpg" class="img1">
+
+                    <img src="images/img3.jpg" class="img3">
+
+                </div>
+                <div class="photos2">
+
+                    <h2>Books</h2>
+
+                    <div class="pics">
+
+                        <div>
+                            <h3 class="title">Thinking, Fast and Slow</h3>
+                            <img src="images/book1.jpeg" class="book1">
+                        </div>
+                        <div>
+                            <h3 class="title">Thinking, Fast and Slow in 30 Minutes</h3>
+                            <img src="images/book3.jpeg" class="book3">
+                        </div>
+                        <div>
+                            <h3 class="title">Noise: A Flaw in Human Judgment</h3>
+                            <img src="images/book2.jpeg" class="book2">
+                        </div>
+                        <div>
+                            <h3 class="title">Heuristics and Biases</h3>
+                            <img src="images/book4.jpeg" class="book4">
+                        </div>
+                        <div>
+                            <h3 class="title">Choices, Values, and Frames</h3>
+                            <img src="images/book5.jpeg" class="book5">
+                        </div>
+                        <div>
+                            <h3 class="title">Attention and Effort</h3>
+                            <img src="images/book6.jpeg" class="book6">
+                        </div>
+                        <div>
+                            <h3 class="title">HBR's 10 Must Reads on Negotiation</h3>
+                            <img src="images/book7.jpeg" class="book7">
+                        </div>
+                        <div>
+                            <h3 class="title">The Essential Tversky</h3>
+                            <img src="images/book8.jpeg" class="book8">
+                        </div>
+                        <div>
+                            <h3 class="title">Thinking and Reasoning</h3>
+                            <img src="images/book9.jpeg" class="book9">
+                        </div>
+                        <div>
+                            <h3 class="title">International Differences in Well-Being</h3>
+                            <img src="images/book10.jpeg" class="book10">
+                        </div>
+                        <div>
+                            <h3 class="title">Judgment Under Uncertainty:</h3>
+                            <h3 class="title"> Heuristics and Biases</h3>
+                            <img src="images/book11.jpeg" class="book11">
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="menu3Works">
+                <div class="Books">
+
+                </div>
+                <div class="Interviews">
+
+                </div>
+
+            </div>
+
+            <div class="menu4Links">
+                <div class="BiographyWorksLinks">
+
+                </div>
+                <div class="PhotosLinks">
+
+                </div>
+
+            </div>
+
+            <div class="menu5User">
+                <div class="LogIn">
+                    <form>
+
+                        <div class="container">
+                            <label for="uname"><b>Username</b></label>
+                            <input type="text" placeholder="Enter Username" name="uname" required>
+
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+
+                            <button type="submit">Login</button>
+                            <label>
+                                <input type="checkbox" checked="checked" name="remember"> Remember me
+                            </label>
+                        </div>
+
+                        <div class="container" style="background-color:#806868">
+                            <button type="button" class="cancelbtn">Cancel</button>
+                            <span class="psw">Forgot <a href="#">password?</a></span>
+                        </div>
+                    </form>
+
+
+                </div>
+            </div>
+
+        </div>
+        <div class="footer"></div>
+    </div>
+</body>
